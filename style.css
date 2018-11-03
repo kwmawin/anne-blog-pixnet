@@ -92,12 +92,20 @@ padding:10px;
 
 #header {
 margin-bottom:10px;
-height:500px;
-background-image:url(https://pic.pimg.tw/kwmawin/1435961238-2627713482.png);
-background-color:#fff;
+margin-top:30px;
+margin-left:-50px;
+margin-right:-25px;
+height:150px;
+background-image: url("https://pic.pimg.tw/kwmawin/1541225885-3054634859_l.jpg");
+background-color:#ffffff;
 background-position:center;
 background-repeat:no-repeat;
-padding:10px;
+background-size: auto 100%;
+padding:0px;
+}
+
+#banner {
+display: none;
 }
 
 #banner h1 a {
@@ -124,6 +132,7 @@ padding-right:20px;
 }
 
 #navigation {
+display: none;
 background:#fff;
 float:right;
 overflow:hidden;
@@ -329,28 +338,36 @@ position: fixed;
 top: 0;
 left: 0;
 width: 100%;
+height: 100px;
 background: white;
 opacity-level: 1;
 }
 
-#box504075 {
-margin-top: 40px;
-float: left;
-}
-
-#box504075 .box-title.entry-title {
+#links-row-2 .box-title.entry-title {
 display: none;
 width: 0;
 height: 0;
 }
 
-#box186600 {
+#anne-main-menu {
 margin-top: 40px;
 float: left;
 }
 
-#box186600 .box-title.entry-title {
-display: none;
+#anne-main-menu div {
+float: left;
+margin-right:10px;
+}
+
+#anne-social-links div {
+float: right;
+margin-left:10px;
+}
+
+
+#anne-social-links {
+margin-top: 40px;
+float: right;
 }
 
 
