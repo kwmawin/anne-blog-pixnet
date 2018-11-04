@@ -95,7 +95,7 @@ margin-bottom:10px;
 margin-top:30px;
 margin-left:-50px;
 margin-right:-25px;
-height:150px;
+height:200px;
 background-image: url("https://farm5.staticflickr.com/4816/31820205498_9cd8d085bd_k.jpg");
 background-color:#ffffff;
 background-position:center;
@@ -333,42 +333,7 @@ padding:10px;
 box-sizing: border-box;
 }
 
-#links-row-2 {
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-height: 100px;
-background: white;
-opacity: 0.5;
-}
 
-#links-row-2 .box-title.entry-title {
-display: none;
-width: 0;
-height: 0;
-}
-
-#anne-main-menu {
-margin-top: 40px;
-float: left;
-}
-
-#anne-main-menu div {
-float: left;
-margin-right:10px;
-}
-
-#anne-social-links div {
-float: right;
-margin-left:10px;
-}
-
-
-#anne-social-links {
-margin-top: 40px;
-float: right;
-}
 
 
 .box {
@@ -449,4 +414,66 @@ color:#fff;
 
 .publish {
 color:gray;
+}
+
+#links-row-2 {
+position: fixed;
+top: 45px;
+left: 0px;
+width: 100%;
+height: 40px;
+background: white;
+}
+
+#links-row-2 .box-title.entry-title {
+display: none;
+width: 0;
+height: 0;
+}
+
+#anne-main-menu {
+float: left;
+font-size: 15px;
+}
+
+#anne-main-menu .anne-dropdown {
+position: relative;
+float: left;
+margin-right: 50px;
+margin-top: 5px;
+}
+
+#anne-main-menu .anne-dropdown .anne-dropdownMenu {
+visibility: hidden;
+position: absolute;
+opacity: 0;
+transition: opacity 0.3s;
+background-color: white;
+}
+
+#anne-main-menu .anne-dropdown .anne-dropdownMenu ul {
+padding-top: 15px;
+}
+
+#anne-main-menu .anne-dropdown .anne-dropdownMenu ul li {
+border: 1px solid #C0C0C0;
+box-sizing: border-box;
+padding: 15px;
+margin: -1px;
+}
+
+#anne-main-menu .anne-dropdown:hover .anne-dropdownMenu {
+visibility: visible;
+opacity: 1;
+}
+
+
+#anne-social-links div {
+float: right;
+margin-left:10px;
+}
+
+#anne-social-links {
+margin-top: 40px;
+float: right;
 }
