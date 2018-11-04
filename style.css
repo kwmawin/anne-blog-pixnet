@@ -1,3 +1,5 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
 #comment-form table {
 width:96%;
 margin:0 auto;
@@ -434,13 +436,13 @@ height: 0;
 #anne-main-menu {
 float: left;
 font-size: 15px;
+margin-top: 5px;
 }
 
 #anne-main-menu .anne-dropdown {
 position: relative;
 float: left;
 margin-right: 50px;
-margin-top: 5px;
 }
 
 #anne-main-menu .anne-dropdown .anne-dropdownMenu {
@@ -467,13 +469,19 @@ visibility: visible;
 opacity: 1;
 }
 
-
-#anne-social-links div {
+#anne-social-links {
 float: right;
-margin-left:10px;
+margin-top: 5px;
 }
 
-#anne-social-links {
-margin-top: 40px;
-float: right;
+#anne-social-links .anne-social-link-item {
+float: left;
+margin-left:10px;
+opacity: 0.7;
+transition: opacity 0.3s;
+font-size: 15px;
+}
+
+#anne-social-links .anne-social-link-item:hover {
+opacity: 1;
 }
