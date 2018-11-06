@@ -734,6 +734,15 @@ text-transform: uppercase;
 margin-left: 50px;
 }
 
+#anne-main-menu a.anne-category-link {
+color: Gray;
+transition: color 0.3s;	
+}
+
+#anne-main-menu a.anne-category-link:hover {
+color: #404040;
+}
+
 #anne-main-menu .anne-dropdown {
 position: relative;
 float: left;
@@ -776,6 +785,7 @@ color: #404040;
 visibility: visible;
 opacity: 1;
 }
+
 
 #anne-social-links {
 float: right;
