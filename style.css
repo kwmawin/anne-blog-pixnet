@@ -246,16 +246,6 @@ text-align:right;
 padding:20px 0 0;
 }
 
-.back-to-top {
-margin:5px 0 10px;
-}
-
-.back-to-top a {
-background:#b3b3b3;
-color:#fff;
-padding:2px;
-}
-
 .forward img {
 width:10px;
 height:10px;
@@ -672,15 +662,29 @@ padding:10px 0 0;
 
 #article-area .more {
 margin:20px 10px 20px 0;
+height: 30px;
+width: 155px;
+background-image: url("https://farm5.staticflickr.com/4885/43941987740_ec032b8985.jpg");
+background-repeat: no-repeat;
+background-size: 100% 100%;
+transition: 0.3s;
+margin-left: auto;
+margin-right: auto;
 }
 
+#article-area .more:hover {
+background-image: url("https://farm5.staticflickr.com/4892/43941987700_b94f647226.jpg");
+}
+
+/* Make the link itself transparent so words wont show up, but still clickable */
 #article-area .more a {
-color:#404040;
+opacity: 0;
+height: 30px;
+width: 155px;
+box-sizing: border-box;
+display: block;
 }
 
-#article-area .more a:hover {
-color: Gray;
-}
 
 #article-area .author {
 color: Gray;
@@ -697,6 +701,22 @@ color: Gray;
 #article-area .author a:hover {
 color: #404040;
 }
+
+#article-area .back-to-top {
+margin:5px 0 10px;
+}
+
+#article-area .back-to-top a {
+color:#fff;
+padding:2px;
+transition: 0.3s;
+background: Silver;
+}
+
+#article-area .back-to-top a:hover {
+background: Gray;
+}
+
 
 /*Top menu*/
 
@@ -788,16 +808,16 @@ float: right;
 margin-right: 50px;
 }
 
-#anne-social-links .anne-social-link-item {
+#anne-social-links a.anne-social-link-item {
 float: left;
 margin-left:10px;
-opacity: 0.7;
-transition: opacity 0.3s;
+color: Gray;
+transition: color 0.3s;
 font-size: 20px;
 }
 
-#anne-social-links .anne-social-link-item:hover {
-opacity: 1;
+#anne-social-links a.anne-social-link-item:hover {
+color: #404040;
 }
 
 /*Right column*/
@@ -817,4 +837,5 @@ margin-bottom: 25px
 font-size: 15px;
 text-align: center;
 color: Gray;
+margin-top: 15px;
 }
