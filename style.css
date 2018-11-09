@@ -221,12 +221,6 @@ text-decoration:underline;
 color:#d8bad5;
 }
 
-#article-area {
-overflow:hidden;
-margin:0;
-padding:0;
-}
-
 .article-body {
 overflow:hidden;
 }
@@ -266,81 +260,10 @@ border-left:0 solid #86d1e4;
 border-right:0 solid #86d1e4;
 }
 
-.post-comment {
-text-align:center;
-}
-
-.post-comment a {
-background:#efd894;
--moz-border-radius:5px;
-color:#666;
-padding:4px;
-}
-
-.user-post-title {
-font-size:9pt;
-margin:20px 0 0;
-}
 
 .user-post-text {
 text-align:center;
 margin:auto 0;
-}
-
-.single-post {
-position:relative;
-text-align:left;
-overflow:hidden;
-_height:1%;
-background:#fff;
-line-height:18px;
-width:550px;
-word-break:break-all;
-margin:10px auto;
-padding:40px 0 0;
-}
-
-.post-info {
-position:absolute;
-top:0;
-left:0;
-width:98%;
-background:#efd894;
-overflow:hidden;
-color:#666;
--moz-border-radius:5px;
-margin:0;
-padding:5px 3px 3px 8px;
-}
-
-.post-info a {
-background:#fff;
-color:#fff;
-font-size:9pt;
-}
-
-.post-info a:hover {
-background:#cad65a;
-}
-
-.post-info a.hide-message {
-position:absolute;
-top:8px;
-right:10px;
-display:block;
-width:10px;
-height:10px;
-text-indent:-5000px;
-}
-
-.post-info a.delete-message {
-position:absolute;
-top:8px;
-right:25px;
-display:block;
-width:10px;
-height:10px;
-text-indent:-5000px;
 }
 
 a.user-name {
@@ -349,58 +272,11 @@ text-align:center;
 padding:2px;
 }
 
-.post-photo {
-width:60px;
-float:left;
-text-align:center;
-padding:0 0 15px 15px;
-}
-
-.post-photo img {
-width:60px;
-height:60px;
-border:3px solid #fff;
-}
-
-.post-text {
-width:81%;
-float:left;
-margin-right:6px;
-_margin-right:3px;
-line-height:20px;
-color:#888;
-padding:0 0 15px 20px;
-}
-
-.post-text p {
-font-weight:bold;
-color:#000;
-}
 
 #trackback-box .post-text {
 float:none;
 width:auto;
 padding:0 0 7px 7px;
-}
-
-.reply-text {
-clear:both;
-float:left;
-width:522px;
-border-top:1px dashed #efd894;
-margin-left:0;
-color:#000;
-line-height:21px;
--moz-border-radius:5px;
-padding:45px 10px 15px 15px;
-}
-
-.reply-text textarea {
-width:95%;
-height:1%;
-background:#fff;
-overflow:hidden;
-border:0;
 }
 
 .single-post.secret {
@@ -638,7 +514,12 @@ vertical-align: top;
 text-align: left;
 }
 
-
+#article-area {
+overflow:hidden;
+margin:0;
+padding:0;
+width: 100%;
+}
 
 #article-area .publish {
 font-size:12px;
@@ -739,6 +620,133 @@ background: Silver;
 background: Gray;
 }
 
+/* Inside article */
+#comment-box {
+position: relative;
+}
+
+#user-post .post-comment {
+position: absolute;
+top: 0;
+text-align: center;
+background: #efd894;
+color: #666;
+padding: 4px;
+}
+
+#user-post .user-post-title {
+padding: 100px 0 0 0;
+}
+
+#user-post .single-post {
+position: relative;
+text-align:left;
+overflow:hidden;
+_height:1%;
+background:#fff;
+line-height:18px;
+width:100%;
+word-break:break-all;
+margin:10px auto;
+padding: 0;
+}
+
+#user-post .post-photo {
+width:60px;
+height: 60px;
+position: absolute;
+top: 0;
+left: 0;
+padding: 0;
+}
+
+#user-post .post-photo img {
+width:60px;
+height:60px;
+border:3px solid #fff;
+border-radius: 50%;
+}
+
+#user-post .post-text {
+width:100%;
+line-height:20px;
+color:#888;
+padding: 100px 0 0 0;
+}
+
+#user-post .post-text p {
+font-weight:bold;
+color:#000;
+}
+
+#user-post .reply-text {
+clear:both;
+float:left;
+width:100%;
+margin-left:0;
+color:#000;
+line-height:21px;
+-moz-border-radius:5px;
+padding:20px 0 20px 40px;
+}
+
+#user-post .reply-text .input-textarea {
+width: 100%;
+height:1%;
+overflow: hidden;
+border: 1px solid;
+background: white;
+}
+
+#user-post .post-info {
+position:absolute;
+top: 0;
+left: 90px;
+overflow:hidden;
+color:#666;
+-moz-border-radius:5px;
+margin:0;
+padding:15px 0 0 0;
+}
+
+#user-post .post-info .user-name a {
+color: Gray;
+}
+
+#user-post .post-info .user-name a:hover {
+color: #404040;
+}
+
+#user-post .post-info .post-time {
+display: block;
+color: #bc986d;
+}
+
+#user-post .post-info a {
+background:#fff;
+color:#fff;
+font-size:9pt;
+}
+
+#user-post .post-info a.hide-message {
+position:absolute;
+top:8px;
+right:10px;
+display:block;
+width:10px;
+height:10px;
+text-indent:-5000px;
+}
+
+#user-post .post-info a.delete-message {
+position:absolute;
+top:8px;
+right:25px;
+display:block;
+width:10px;
+height:10px;
+text-indent:-5000px;
+}
 
 /*Top menu*/
 
