@@ -669,13 +669,18 @@ color: Gray;
 color: #404040;
 }
 
-.article-content {
-_height:1%;
+#article-area .article-head {
+padding: 0;
+}
+
+#article-area .article-content {
+text-align: left;
+/*_height:1%;
 overflow:hidden;
 _overflow:none;
 font-size:15px;
 line-height:20px;
-padding:10px 0 0;
+padding:10px 0 0;*/
 }
 
 #article-area .more {
@@ -702,7 +707,6 @@ width: 155px;
 box-sizing: border-box;
 display: block;
 }
-
 
 #article-area .author {
 color: Gray;
@@ -865,4 +869,8 @@ margin-bottom: 0px;
 #links-row-1 .box-text {
 padding:0px 10px 10px;
 line-height:21px;
+}
+
+#links-row-1 .box-text ul {
+padding: 0;
 }
