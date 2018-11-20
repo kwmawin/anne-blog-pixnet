@@ -1185,7 +1185,7 @@ margin: 0;
 padding: 0;
 }
 
-#category-main[class^="category"] .article .article-body .article-content .article-content-inner p img {
+#category-main[class^="category"] .article .article-body .article-content .article-content-inner p:nth-child(1) img , #category-main[class^="category"] .article .article-body .article-content .article-content-inner p:nth-child(2) img {
 position: absolute;
 top: 140px;
 left: 0;
