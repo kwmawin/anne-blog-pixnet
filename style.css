@@ -505,7 +505,7 @@ color: Gray;
 font-weight: 300;
 }
 
-#article-area .publish .date,.time {
+#article-area .publish .day, #article-area .publish .time {
 display: none;
 }
 
@@ -579,11 +579,11 @@ padding:5px 5px 10px 0;
 border-bottom: 1px solid silver;
 }
 
-#article-area .author a , #article-area .refer a {
+#article-area .author a , #article-area .refer a, #article-area .history a {
 color: Gray;
 }
 
-#article-area .author a:hover, #article-area .refer a:hover {
+#article-area .author a:hover, #article-area .refer a:hover, #article-area .history a:hover {
 color: #bc986d;
 }
 
